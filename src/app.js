@@ -6,8 +6,7 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import reducer from './redux';
 import { BrowserRouter } from 'react-router-dom';
-import { getMovies } from './redux/movies/actions';
-// import { login } from './redux/authentication/actions';
+import { getArticles } from './redux/articles/actions';
 import App from './components/App';
 
 
@@ -17,7 +16,7 @@ const store = createStore(reducer, compose(
     applyMiddleware(thunk)
 ));
 
-store.dispatch(getMovies());
+store.dispatch(getArticles());
 // store.dispatch(login());
 
 const container = document.getElementById('app-container');

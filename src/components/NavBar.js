@@ -48,16 +48,13 @@ export default class NavBar extends React.Component {
             <div style={styleDiv} className="w3-container w3-teal">
                 <ul style={this.props.hiddenBar ? hidden : ulStyle}>
                     <li style={liStyle}>
-                        <a style={li_a_style} className="active" href="#">New Releases</a>
+                        <a style={li_a_style} className="active" href="/create">Rédiger un article</a>
                     </li>
                     <li style={liStyle}>
-                        <a style={li_a_style} href="#">Top Picks</a>
+                        <a style={li_a_style} href="/list">Liste des articles publiés</a>
                     </li>
                     <li style={liStyle}>
-                        <a style={li_a_style} href="#">Preorder</a>
-                    </li>
-                    <li style={liStyle}>
-                        <a style={li_a_style} href="#">Last chance</a>
+                        <a style={li_a_style} href="/login">Déconnexion</a>
                     </li>
                 </ul>
             </div>
